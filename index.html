@@ -110,7 +110,6 @@
 <img src="imagens/APEWIFHAT.png" alt="APE" width="200" style="margin-right: auto;">
 	<!-- texto que aparece ao dar hover no simbolo-->
 
-	<div id="infotext">DEVS jeeted Community Driven Now  </div>
 	
 
 	<!--
@@ -155,89 +154,111 @@
 <!-- parte de introduçao , links the social M, uma imagem,-->
 
 
-<style>/* Custom styles for the hero section */
-	.hero .container .row .col-lg-6 {
-		min-width: 500px; /* Set minimum width to maintain size */
-	}
-	
-	/* Media query for screens smaller than a certain width */
-	@media (max-width: 1200px) { /* Adjust this value based on your specific breakpoint */
-		.hero .container .row .col-lg-6 {
-			flex: 0 0 100%; /* Takes full width */
-			max-width: 100%; /* Ensures no overflow */
-		}
-	}
 
-	.hero {
-    padding-top: 100px; /* Adjust this value based on the height of your navbar */
-}
-
-	</style>
 
 	<!-- ======= Hero Section ======= -->
-	<section style="height: 900px;" id="hero" class="hero d-flex align-items-center">
-
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 d-flex flex-column justify-content-center">
-
-
-					
-					<img data-aos="fade-up" src="imagens/APEWIFHAT.png" class="main-logo aos-init aos-animate" alt="">
-					<h2 data-aos="fade-up" class="main-subtitle aos-init aos-animate">Future Of Community Driven Communities </h2>
-
-
-
-					
-					<div data-aos="fade-up" data-aos-delay="600" class="aos-init aos-animate">
-						<div class="text-center text-lg-start mt-5">
-							<!-- <a href="https://bscscan.com/token/0x2f0c6e147974BfbF7Da557b88643D74C324053A2" target="_blank" class="btn-buy mt-2">
-								<span>0x2f0c6e147974BfbF7Da557b88643D74C324053A2</span>
-							</a> -->
-						
-							<div class="CA">
-
-								<h4> APEWIFHAT Contract Address</h4>
-
-								
-								<div class="btn-group custom-group">
-
-									<button class="btn-group__item btn-group__item">
-										KdF3kjqSHbWXFstBLA2dccDxuNBi4o3yZqtMhB7k5dZ
-									</button>
-								</div>
-							
-							</div>
-							
-						</div>
-
+	<section id="hero" class="hero d-flex align-items-center" style="height: 100vh;">
+		<div class="container justify-content-center">
+		  <div class="row">
+			<div class="col-lg-6 d-flex flex-column justify-content-center">
+			  <img data-aos="fade-up" src="imagens/APEWIFHAT.png" class="main-logo aos-init aos-animate img-fluid" alt="">
+			  <h2 data-aos="fade-up" class="main-subtitle aos-init aos-animate">DEVS jeeted Community Driven Now</h2>
+			  <div data-aos="fade-up" data-aos-delay="600" class="aos-init aos-animate">
+				<div class="text-center text-lg-start mt-5">
+				  <div class="CA">
+					<h4>APEWIFHAT Contract Address</h4>
+					<div class="btn-group custom-group">
+					  <button class="btn-group__item btn-group__item">
+						KdF3kjqSHbWXFstBLA2dccDxuNBi4o3yZqtMhB7k5dZ
+					  </button>
 					</div>
-
-					<!-- redes sociais-->
-					
-
-
+				  </div>
 				</div>
-
-
-				<div class="col-lg-6 hero-img aos-init aos-animate" data-aos="zoom-out" data-aos-delay="200">
-
-					<!-- Parte que faz a ligação para o jupiter -->
-					<div style="width: 500px; height: 700px;">
-
-						
-						<iframe class="flooz" id="flooz" src="https://jup.ag/" title="Flooz Trade" frameborder="0" allow="clipboard-read; clipboard-write; web-share; accelerometer *; autoplay *; camera *; gyroscope *; payment *"> </iframe>
-					
-						<p>Visit <a href="https://jup.ag/">jup.ag</a></p>	
-					</div>				
-				
-				</div>
+			  </div>
 			</div>
+
+
+			<div class="col-lg-6 hero-img aos-init aos-animate d-flex flex-column justify-content-center" data-aos="zoom-out" data-aos-delay="200">
+			  <div class="embed-responsive embed-responsive-16by9">
+				<iframe class="embed-responsive-item" id="flooz" src="https://jup.ag/" title="Flooz Trade" frameborder="0" allow="clipboard-read; clipboard-write; web-share; accelerometer *; autoplay *; camera *; gyroscope *; payment *"></iframe>
+			  </div>
+			  <p class="text-center mt-2">Visit <a href="https://jup.ag/">jup.ag</a> and go Bananas </p>
+			</div>
+
+		  </div>
 		</div>
-
-		
-
-	</section><!-- End Hero -->
+	</section>
+	  
+	 
+	 <style>
+		/* Custom styles */
+		.hero {
+		  height: 100vh;
+		  display: flex;
+		  align-items: center;
+		}
+		.main-logo {
+		  max-width: 100%;
+		  height: auto;
+		}
+		.embed-responsive {
+		  position: relative;
+		  display: block;
+		  width: 100%;
+		  padding: 0;
+		  overflow: hidden;
+		}
+		.embed-responsive::before {
+		  display: block;
+		  content: '';
+		}
+		.embed-responsive-16by9::before {
+		  padding-top: 56.25%;
+		}
+		.embed-responsive-item {
+		  position: absolute;
+		  top: 0;
+		  bottom: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		  border: 0;
+		}
+		@media (max-width: 768px) {
+		  .hero {
+			flex-direction: column;
+			text-align: center;
+			height: auto; /* Adjust height for smaller screens */
+		  }
+		  .hero-img {
+			margin-top: 20px;
+		  }
+		  .embed-responsive {
+			height: 300px; /* Set a fixed height for smaller screens */
+		  }
+		  .embed-responsive-16by9::before {
+			padding-top: 0; /* Remove padding-top for smaller screens */
+		  }
+		  .embed-responsive-item {
+			height: 100%; /* Ensure iframe takes full height */
+		  }
+		  .main-logo {
+			width: 100%;
+			height: auto;
+			margin-top: 20px; /* Add margin to prevent cutting off */
+		  }
+		}
+		.text-center {
+		  text-align: center;
+		}
+		.mt-2 {
+		  margin-top: 0.5rem;
+		}
+	 </style>
+	 
+	 
+	 
+	  <!-- End Hero -->
 
 
 <section>
