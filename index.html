@@ -99,12 +99,26 @@
       <img src="imagens/cropped_image.png" alt="main new homeless pepe logo">
 
 	<!--<a href="#" class="mx-2"><i class="fab fa-tiktok"></i></a>-->
-	<a href="https://x.com/ApewifHatCoin" class="mx-2"><i class="fab fa-twitter"></i></a>
-	<a href="https://t.me/ApeWifHatCoinX" class="mx-2"><i class="fab fa-telegram-plane"></i></a>
-	<a href="https://www.instagram.com/apewifhat?igsh=NTJ3MWo4YndwNjJu" class="mx-2"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.coingecko.com/en/coins/apewifhat" class="mx-2">
+    <img src="imagens/cgicon.png" alt="CoinGecko" style="width: 24px; height: 24px;">
+  </a>
+
+  <a href="https://coinmarketcap.com/currencies/apewifhat/" class="mx-2">
+	<img src="imagens/cmcicon.png" alt="CoinMarketCap" style="width: 24px; height: 24px;">
+  </a>
+
+  <a href="https://x.com/ApewifHatCoin" class="mx-2">
+	<img src="imagens/x-twitter.svg" alt="Twitter" style="width: 24px; height: 24px;">
+  </a>
+  <a href="https://t.me/ApeWifHatCoinX" class="mx-2">
+	<img src="imagens/telegram.svg" alt="Telegram" style="width: 24px; height: 24px;">
+  </a>
+  <a href="https://www.instagram.com/apewifhat?igsh=NTJ3MWo4YndwNjJu" class="mx-2">
+	<img src="imagens/transferir.jpg" alt="Instagram" style="width: 24px; height: 24px;">
+  </a>
 
 
-
+	
 						<!-- Letras da nav bar Inicial-->
 
 <img src="imagens/APEWIFHAT.png" alt="APE" width="200" style="margin-right: auto;">
@@ -179,11 +193,11 @@
 
 
 			<div class="col-lg-6 hero-img aos-init aos-animate d-flex flex-column justify-content-center" data-aos="zoom-out" data-aos-delay="200">
-			  <div class="embed-responsive embed-responsive-16by9">
-				<iframe class="embed-responsive-item" id="flooz" src="https://jup.ag/" title="Flooz Trade" frameborder="0" allow="clipboard-read; clipboard-write; web-share; accelerometer *; autoplay *; camera *; gyroscope *; payment *"></iframe>
+				<div class="embed-responsive embed-responsive-16by9">
+				  <iframe class="embed-responsive-item" id="flooz" src="https://jup.ag/" title="Flooz Trade" frameborder="0" allow="clipboard-read; clipboard-write; web-share; accelerometer *; autoplay *; camera *; gyroscope *; payment *"></iframe>
+				</div>
+				<p class="text-center mt-2">Visit <a href="https://jup.ag/">jup.ag</a> and go Bananas </p>
 			  </div>
-			  <p class="text-center mt-2">Visit <a href="https://jup.ag/">jup.ag</a> and go Bananas </p>
-			</div>
 
 		  </div>
 		</div>
@@ -192,68 +206,93 @@
 	 
 	 <style>
 		/* Custom styles */
-		.hero {
-		  height: 100vh;
-		  display: flex;
-		  align-items: center;
-		}
-		.main-logo {
-		  max-width: 100%;
-		  height: auto;
-		}
-		.embed-responsive {
-		  position: relative;
-		  display: block;
-		  width: 100%;
-		  padding: 0;
-		  overflow: hidden;
-		}
-		.embed-responsive::before {
-		  display: block;
-		  content: '';
-		}
-		.embed-responsive-16by9::before {
-		  padding-top: 56.25%;
-		}
-		.embed-responsive-item {
-		  position: absolute;
-		  top: 0;
-		  bottom: 0;
-		  left: 0;
-		  width: 100%;
-		  height: 100%;
-		  border: 0;
-		}
-		@media (max-width: 768px) {
-		  .hero {
-			flex-direction: column;
-			text-align: center;
-			height: auto; /* Adjust height for smaller screens */
-		  }
-		  .hero-img {
-			margin-top: 20px;
-		  }
-		  .embed-responsive {
-			height: 300px; /* Set a fixed height for smaller screens */
-		  }
-		  .embed-responsive-16by9::before {
-			padding-top: 0; /* Remove padding-top for smaller screens */
-		  }
-		  .embed-responsive-item {
-			height: 100%; /* Ensure iframe takes full height */
-		  }
-		  .main-logo {
-			width: 100%;
-			height: auto;
-			margin-top: 20px; /* Add margin to prevent cutting off */
-		  }
-		}
-		.text-center {
-		  text-align: center;
-		}
-		.mt-2 {
-		  margin-top: 0.5rem;
-		}
+		/* Custom styles */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.main-logo {
+  max-width: 100%;
+  height: auto;
+}
+.embed-responsive {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+.embed-responsive::before {
+  display: block;
+  content: '';
+}
+.embed-responsive-16by9::before {
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+.embed-responsive-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    height: auto; /* Adjust height for smaller screens */
+  }
+  .hero-img {
+    margin-top: 20px;
+  }
+  .embed-responsive {
+    height: auto; /* Ensure height adjusts automatically */
+  }
+  .embed-responsive-16by9::before {
+    padding-top: 56.25%; /* Maintain 16:9 aspect ratio */
+  }
+  .embed-responsive-item {
+    height: 100%; /* Ensure iframe takes full height */
+  }
+  .main-logo {
+    width: 100%;
+    height: auto;
+    margin-top: 20px; /* Add margin to prevent cutting off */
+  }
+}
+@media (max-width: 360px) { /* Common Samsung phone width */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    height: auto; /* Adjust height for smaller screens */
+  }
+  .hero-img {
+    margin-top: 20px;
+  }
+  .embed-responsive {
+    height: auto; /* Ensure height adjusts automatically */
+  }
+  .embed-responsive-16by9::before {
+    padding-top: 56.25%; /* Maintain 16:9 aspect ratio */
+  }
+  .embed-responsive-item {
+    height: 100%; /* Ensure iframe takes full height */
+  }
+  .main-logo {
+    width: 100%;
+    height: auto;
+    margin-top: 20px; /* Add margin to prevent cutting off */
+  }
+}
+.text-center {
+  text-align: center;
+}
+.mt-2 {
+  margin-top: 0.5rem;
+}
 	 </style>
 	 
 	 
